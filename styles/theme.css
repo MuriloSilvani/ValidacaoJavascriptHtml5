@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+
+.input:focus{
+    color: #333;
+}
+
+.input.possui-erro-validacao{
+    border-color: #f73859;
+}
+
+.erro-validacao{
+    margin-top: 3px;
+    color: #f73859;
+    font-size: 14px;
+}

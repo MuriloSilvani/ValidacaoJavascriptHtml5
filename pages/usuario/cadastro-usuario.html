@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='../../styles/theme.css'>
+    <script src='../../services/app.js' type='module'></script>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title> Validacao Javascript e Html5 </title>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='box'>
+            <h1> Cadastro de Usuário </h1>
+            <form id='form' method='GET' action='./cadastro-sucesso.html' validation>
+                <hr class='divider'>
+                <h2 class='subtitulo'>
+                    Informações de Acesso
+                </h2>
+                <div class='input-container'>
+                    <label class='label' for='email'>
+                        Email
+                        <span class='info'>(Necessário)</span>
+                    </label>
+                    <input class='input' required name='email' id='email' data-tipo='email' type='email' />
+                </div>
+                <div class='input-container'>
+                    <label class='label' for='password'>
+                        Senha
+                        <span class='info'>(Necessário)</span>
+                    </label>
+                    <input class='input' required name='password' id='password' data-tipo='password' type='password'
+                        minlength='4' />
+                </div>
+                <hr class='divider'>
+                <h2 class='subtitulo'>
+                    Informações Pessoais
+                </h2>
+                <div class='input-container'>
+                    <label class='label' for='dataNascimento'>
+                        Data de Nascimento
+                        <span class='info'>(Necessário)</span>
+                    </label>
+                    <input class='input' required name='dataNascimento' id='dataNascimento' data-tipo='dataNascimento'
+                        type='date' min='1901-01-01' />
+                </div>
+                <div class='input-container'>
+                    <label class='label' for='cpf'>
+                        CPF
+                        <span class='info'>(Necessário)</span>
+                    </label>
+                    <input class='input' required name='cpf' id='cpf' data-tipo='cpf' />
+                </div>
+                <div class='input-container'>
+                    <label class='label' for='rg'>
+                        RG
+                        <span class='info'>(Necessário)</span>
+                    </label>
+                    <input class='input' required name='rg' id='rg' data-tipo='rg' />
+                </div>
+                <hr class='divider'>
+                <h2 class='subtitulo'>
+                    Endereço
+                </h2>
+                <div class='input-container'>
+                    <label class='label' for='cep'>
+                        CEP
+                        <span class='info'>(Necessário)</span>
+                    </label>
+                    <input class='input' required name='cep' id='cep' data-tipo='cep' type='text'
+                        pattern='[\d]{5}-?[\d]{3}' />
+                </div>
+                <div class='input-container'>
+                    <label class='label' for='logradouro'>
+                        Logradouro
+                        <span class='info'>(Necessário)</span>
+                    </label>
+                    <input class='input' required name='logradouro' id='logradouro' data-tipo='logradouro' />
+                </div>
+                <div class='input-container'>
+                    <label class='label' for='cidade'>
+                        Cidade
+                        <span class='info'>(Necessário)</span>
+                    </label>
+                    <input class='input' required name='cidade' id='cidade' data-tipo='cidade' />
+                </div>
+                <div class='input-container'>
+                    <label class='label' for='estado'>
+                        Estado
+                        <span class='info'>(Necessário)</span>
+                    </label>
+                    <input class='input' required name='estado' id='estado' data-tipo='estado' />
+                </div>
+                <div class='botao-container'>
+                    <button class='botao botao-azul' type='submit'>
+                        Enviar
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
