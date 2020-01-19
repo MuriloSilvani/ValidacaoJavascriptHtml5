@@ -17,6 +17,12 @@ window.onload = () => {
             });
         }
 
+        input.addEventListener('invalid', (e) => {
+            e.preventDefault();
+
+            validarInput(input);
+        });
+
         input.addEventListener('input', () => {
             validarInput(input, false);
         });

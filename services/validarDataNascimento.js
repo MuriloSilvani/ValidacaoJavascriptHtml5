@@ -9,10 +9,10 @@ export const validarDataNascimento = input => {
     );
 
     if (dataFaz18 > dataAtual) {
-        input.setCustomValidity(true);
+        input.setCustomValidity("A idade mínima é de 18 anos");
         return;
     }
 
-    input.setCustomValidity(false);
+    input.setCustomValidity("");
     return;
-}
+};
